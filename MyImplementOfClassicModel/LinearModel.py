@@ -20,5 +20,3 @@ class LinearRegreesion():
     def predict(self, X):
         X = np.hstack([np.array([1]).reshape(1, 1), X])
         return np.matmul(X, self.b).T
-
-# class LinearRegressionAnalysis()
