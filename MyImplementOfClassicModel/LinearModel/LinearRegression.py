@@ -8,8 +8,10 @@ class LinearRegreesion():
     def fit(self, X: np.array, y: np.array):
         self.X = X
         self.y = y
-        self.X = np.hstack([np.array([1] * self.X.shape[0]).reshape(-1, 1), self.X])  # Adding Constant
-        self.b = np.linalg.inv(self.X.T @ self.X) @ self.X.T @ self.y  # Using OLS
+        self.X = np.hstack([np.array([1] * self.X.shape[0]).reshape(-1, 1),
+                            self.X])  # Adding Constant
+        self.b = np.linalg.inv(self.X.T @ self.X) \
+                 @ self.X.T @ self.y  # Using OLS
         return self
 
     def predict(self, X):
