@@ -1,10 +1,13 @@
 import numpy as np
 
+from ..base.BaseEstimator import BaseEstimator
 
-class KMeans():
+
+class KMeans(BaseEstimator):
     def __init__(self, n_clusters: int = 8, max_iter: int = 300):
         self.n_clusters = n_clusters
         self.max_iter = max_iter
+        super()
 
     def fit(self, X: np.array):
         size_of_input = X.shape[0]

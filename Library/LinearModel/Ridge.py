@@ -1,9 +1,12 @@
 import numpy as np
 
+from ..base.BaseEstimator import BaseEstimator
 
-class Ridge():
+
+class Ridge(BaseEstimator):
     def __init__(self, alpha=1.0):
         self.alpha = alpha
+        super()
 
     def fit(self, X: np.array, y: np.array):
         self.X = X

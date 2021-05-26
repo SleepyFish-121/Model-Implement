@@ -1,9 +1,11 @@
 import numpy as np
 
+from ..base.BaseEstimator import BaseEstimator
 
-class LinearRegreesion():
+
+class LinearRegreesion(BaseEstimator):
     def __init__(self, ):
-        pass
+        super()
 
     def fit(self, X: np.array, y: np.array):
         self.X = X
