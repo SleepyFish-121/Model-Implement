@@ -2,7 +2,7 @@ from collections import Counter
 
 import numpy as np
 
-from ..base.BaseEstimator import BaseEstimator
+from ..Base.BaseEstimator import BaseEstimator
 
 
 def mode(input_list):

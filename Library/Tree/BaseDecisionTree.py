@@ -3,7 +3,7 @@ from collections import Counter
 import numpy as np
 
 from DataStructure import Tree, TreeNode
-from ..base.BaseEstimator import BaseEstimator
+from ..Base.BaseEstimator import BaseEstimator
 
 
 class BaseDecisionTree(Tree, BaseEstimator) :

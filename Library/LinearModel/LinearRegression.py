@@ -1,6 +1,6 @@
 import numpy as np
 
-from ..base.BaseEstimator import BaseEstimator
+from ..Base.BaseEstimator import BaseEstimator
 
 
 class LinearRegreesion(BaseEstimator):

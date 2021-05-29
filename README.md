@@ -2,11 +2,8 @@
 
 ## Overview
 
-Planning to write some statistical or machine learning model with Numpy library.
-
-Not considering error from inappropriate input.
-
-Focusing on the implement of `fit()` and `predict()` fucntion.
+Planning to implement some statistical or machine learning model with Numpy library. Focusing on the implement
+of `fit()` and `predict()` fucntion.
 
 ## Events
 

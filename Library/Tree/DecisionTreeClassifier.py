@@ -47,7 +47,6 @@ class DecisionTreeClassifier(BaseDecisionTree) :
         add_node(None, self.root, None)
         return dot
 
-
 def ID3(X, y) :
     calculate_entrophy = lambda a : -1 * (
         np.sum([a[i] / (sum(a) + 1e-5) * log2(a[i] / (sum(a) + 1e-5) + 1e-5) for i in range(len(a))]))
