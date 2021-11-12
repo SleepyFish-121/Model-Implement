@@ -8,6 +8,7 @@ from ..Base.BaseEstimator import BaseEstimator
 def mode(input_list):
     return Counter(input_list).most_common(1)[0][0]
 
+
 class KNeighborsClassifier(BaseEstimator):
     def __init__(self, n_neighbors=3, ):
         self.n_neighbors = n_neighbors

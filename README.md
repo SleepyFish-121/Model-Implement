@@ -1,7 +1,15 @@
-# Model Implement
+# Implement of Classic Model
 
-* 2021/5/24 Add linear regression model.
-* 2021/5/24 Add K-Means model.
-* 2021/5/25 Add ridge regression mode.
-* 2021/5/26 Add k-nearest neighbors classifier model.
-* 2021/5/29 Add decision tree using ID-3 and entropy.
+## Overview
+
+Planning to implement some statistical or machine learning model with Numpy library. Focusing on the implement
+of `fit()` and `predict()` fucntion.
+
+## Events
+
+* 2021/5/22 Start this project.
+* 2021/5/24 Finish linear regression model.
+* 2021/5/24 Finish K-Means model.
+* 2021/5/25 Finish ridge regression mode.
+* 2021/5/26 Finish k-nearest neighbors classifier model.
+* 2021/5/29 Finish decision tree using ID-3 and entropy.

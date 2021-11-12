@@ -48,20 +48,10 @@ class DecisionTreeClassifier(BaseDecisionTree):
         return dot
 
 
-def ID3(X, y):
+def D45(X, y):
     calculate_entrophy = lambda a: -1 * (
         np.sum([a[i] / (sum(a) + 1e-5) * log2(a[i] / (sum(a) + 1e-5) + 1e-5) for i in range(len(a))]))
     entrophies = []
-    data_dummies = pd.get_dummies(
-        pd.DataFrame(np.hstack([np.array(X), np.array(y).reshape(-1, 1)]), columns=list(X.columns) + ['_Response']))
     for label in X.columns:
-        HS = 0
-        for value in list(set(X[label])):
-            a = []
-            for y_value in list(set(y)):
-                a.append(len((data_dummies[np.logical_and(data_dummies[str(label) + '_' + str(value)] == 1,
-                                                          data_dummies['_Response_' + y_value] == 1)])))
-            p = len(data_dummies[(data_dummies[str(label) + '_' + str(value)] == 1)]) / len(X)
-            HS = p * calculate_entrophy(a) + HS
-        entrophies.append(HS)
+
     return np.argmin(entrophies)
