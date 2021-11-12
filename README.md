@@ -1,13 +1,5 @@
-# Implement of Classic Model
+# Model Implement
 
-## Overview
-
-Planning to implement some statistical or machine learning model with Numpy library. Focusing on the implement
-of `fit()` and `predict()` fucntion.
-
-## Events
-
-* 2021/5/22 Start this project.
 * 2021/5/24 Finish linear regression model.
 * 2021/5/24 Finish K-Means model.
 * 2021/5/25 Finish ridge regression mode.
